@@ -76,8 +76,9 @@ class _WorkOutView2State extends State<WorkOutView2> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          const WorkOutDetailView()));
+                                      builder: (context) => WorkOutDetailView(
+                                            eObj: wObj,
+                                          )));
                             },
                             icon: Image.asset("assets/img/more.png",
                                 width: 25, height: 25))

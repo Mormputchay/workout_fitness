@@ -9,7 +9,8 @@ import '../../data/responseArr.dart';
 import '../../data/workArr.dart';
 
 class WorkOutDetailView extends StatefulWidget {
-  const WorkOutDetailView({super.key});
+  final Map eObj;
+  const WorkOutDetailView({super.key, required this.eObj});
   @override
   State<WorkOutDetailView> createState() => _WorkOutDetailViewState();
 }
@@ -27,7 +28,7 @@ class _WorkOutDetailViewState extends State<WorkOutDetailView> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.asset(
-              "assets/img/1.png",
+              widget.eObj["image"].toString(),
               width: media.width,
               height: media.width * 0.55,
               fit: BoxFit.cover,

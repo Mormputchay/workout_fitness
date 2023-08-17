@@ -102,7 +102,9 @@ class _WorkOutViewState extends State<WorkOutView> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const WorkOutDetailView()));
+                                                  WorkOutDetailView(
+                                                    eObj: wObj,
+                                                  )));
                                     },
                                   )),
                             ],

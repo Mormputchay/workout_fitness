@@ -136,7 +136,9 @@ class _MealPlaViewState extends State<MealPlaView> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      const WorkOutDetailView()));
+                                                      WorkOutDetailView(
+                                                        eObj: wObj,
+                                                      )));
                                         },
                                       )),
                                 ],
